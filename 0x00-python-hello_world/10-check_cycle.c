@@ -14,9 +14,10 @@ int check_cycle(listint_t *list)
 	while (1)
 	{
 		list = list->next;
+
 		if (start == list)
 			return (1);
-		if (list == NULL)
+		if (!list)
 			return (0);
 	}
 }
