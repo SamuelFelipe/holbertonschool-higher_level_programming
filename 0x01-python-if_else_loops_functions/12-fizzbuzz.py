@@ -4,10 +4,10 @@
 def fizzbuzz():
     for i in range(1, 101):
         if not i % 3 and not i % 5:
-            print("fizzbuzz", end=" ")
+            print("FizzBuzz", end=" ")
         elif not i % 3:
-            print("fizz", end=" ")
+            print("Fizz", end=" ")
         elif not i % 5:
-            print("buzz", end=" ")
+            print("Buzz", end=" ")
         else:
             print("{:d}".format(i), end=" ")
