@@ -12,5 +12,5 @@ if __name__ == "__main__":
         print("{} arguments.".format(ac))
 
     for i in argv[1:]:
-        print("{}: {}".format(count, i))
+        print("{:d}: {}".format(count, i))
         count += 1
