@@ -3,7 +3,7 @@
 if __name__ == "__main__":
     from sys import argv
 
-    ac = len(sys.argv) - 1
+    ac = len(argv) - 1
     count = 1
 
     if ac:
@@ -11,6 +11,6 @@ if __name__ == "__main__":
     else:
         print("{} arguments.".format(ac))
 
-    for i in sys.argv[1:]:
+    for i in argv[1:]:
         print("{}: {}".format(count, i))
         count += 1
