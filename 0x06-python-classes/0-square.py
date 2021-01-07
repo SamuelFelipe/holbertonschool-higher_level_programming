@@ -2,4 +2,4 @@
 
 
 class Square:
-    None
+    pass
