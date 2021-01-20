@@ -1,0 +1,35 @@
+=================================
+
+Using ´´MyList´´
+
+---------------------------------
+
+First step 'import the class':
+
+	>>> MyList = __import__('1-my_list').MyList
+
+Normal cases:
+
+	>>> ls = MyList()
+
+	>>> ls.append(1)
+
+	>>> ls.append(2)
+        
+	>>> ls.append(3)
+        
+	>>> ls.append(4)
+        
+	>>> ls.append(5)
+
+	>>> print(ls)
+	[1, 4, 2, 3, 5]
+
+	>>> ls.print_shorted()
+	[1, 2, 3, 4, 5]
+
+	>>> print(ls)
+	[1, 4, 2, 3, 5]
+
+TypeError cases:
+
