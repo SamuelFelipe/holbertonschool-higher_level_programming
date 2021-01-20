@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-'''Class MyList'''
+"""Class that inherits from list"""
 
 
 class MyList(list):
