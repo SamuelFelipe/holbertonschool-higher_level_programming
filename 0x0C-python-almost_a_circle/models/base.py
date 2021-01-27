@@ -20,7 +20,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         '''return the JSON string representation of list_dictionaries'''
-        if list_dictionaries is None:
+        if list_dictionaries is None or len(list_dictionaries) == 0:
             return '[]'
         return json.dumps(list_dictionaries)
 
@@ -39,7 +39,7 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         '''Read a string and return a dictionare'''
-        if json_string is None:
+        if json_string is None or len(json_string) == 0:
             return []
         return json.loads(json_string)
 
@@ -50,9 +50,9 @@ class Base:
         from models.square import Square
 
         if cls is Rectangle:
-            dummy = cls(1,1)
+            dummy = Rectangle(1,1)
         elif cls is Square:
-            dummy = cls(1)
+            dummy = Square(1)
         else:
             dummy = None
         dummy.update(**dictionary)

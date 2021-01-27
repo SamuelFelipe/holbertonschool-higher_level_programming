@@ -22,14 +22,20 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         '''Update the rectangle'''
-        argk = (super().__init__, 'width', 'height', 'x', 'y')
-        if args:
-            argk[0](args[0])
-            for i in range(1, len(args)):
-                exec('self.{} = args[{:d}]'.format(argk[i], i))
-        if kwargs:
-            for i in kwargs:
-                exec('self.{} = kwargs[i]'.format(i))
+        numargs = len(args)
+        if numargs > 0:
+            self.id = args[0]
+        if numargs > 1:
+            self.width = args[1]
+        if numargs > 2:
+            self.height = args[2]
+        if numargs > 3:
+            self.x = args[3]
+        if numargs > 4:
+            self.y = args[4]
+        if numargs == 0:
+            for key, value in kwargs.items():
+                exec('self.{} = {}'.format(key, value))
 
     def area(self):
         '''Return the rectangle's area'''

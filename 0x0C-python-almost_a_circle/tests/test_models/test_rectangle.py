@@ -1,27 +1,43 @@
-#!/usr/bin/python3
+""" This is a Unittest module """
+
+
 import unittest
-from models.rectangle import Rectangle
-'''Classes functioning prove with Unittest'''
+from models.base import Base
+
 
 class TestRectangle(unittest.TestCase):
-    '''test cases to the Base class'''
+    """ Test Cases for Base Class """
 
-    def id_test(self):
-        '''id assigment test'''
-        b1 = Rectangle(1, 1, 0, 0)
-        b2 = Rectangle(1, 2, 0, 0, 13)
-        b3 = Rectangle(1, 3, 0, 0)
-        self.assertEqual(1, b1.id)
-        self.assertEqual(13, b2.id)
-        self.assertEqual(2, b3.id)
+    def setUp(self):
+        """This method set up initial state for all test methods"""
+        Base._Base__nb_objects = 0
+        # print("setUp")
 
-'''
-    def str_test(self):
-        pref = '[Rectangle] ({}) {}/{} - {}/{}'
-        w = 5
-        h = 2
-        x = 1
-        y = 0
-        b1 = Rectangle(w, h, x, y)
-        self.assertEqual(pref.format(1, w, h, x, y), str(b1))
-'''
+    def tearDown(self):
+        """This method to perform cleanup after each test method completes"""
+        # print("tearDown")
+
+    def test_id_single(self):
+        """ Test for set id function """
+        b0 = Base(1)
+        self.assertEqual(b0.id, 1)
+
+    def test_id_none(self):
+        """ Test for set id function """
+        b0 = Base(None)
+        self.assertEqual(b0.id, 1)
+
+    def test_id_multiple(self):
+        """ Test for set id function """
+        b0 = Base()
+        b1 = Base()
+        self.assertEqual(b0.id, 1)
+        self.assertEqual(b1.id, 2)
+
+    def test_id_error(self):
+        """ Test for set id function """
+        self.assertEqual("Juan", Base("Juan").id)
+        self.assertEqual(2.5, Base(2.5).id)
+        self.assertEqual([1, 2], Base([1, 2]).id)
+        self.assertEqual({'1': 2}, Base({'1': 2}).id)
+        self.assertEqual(True, Base(True).id)
