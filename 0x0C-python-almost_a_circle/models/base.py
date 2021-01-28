@@ -9,8 +9,9 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        '''initialize the class with the 'id' if it is pased
-        otherwhise set the 'id' automatycally'''
+        '''Initialize the class with the 'id' if it is pased
+        otherwhise set the 'id' automatycally to avoid redundancy
+        in the child class'''
         if id is None:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
