@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 from models.base import Base
-'''class Rectangle that inherits from Base'''
+'''Class Rectangle that inherits from Base and is parent
+of the Square class'''
 
 
 class Rectangle(Base):
-    '''Class Rectangle'''
+    '''Class Rectangle sets a rectangle and display it with
+    the (display) method'''
 
     def __init__(self, width, height, x=0, y=0, id=None):
         '''Initialize the Rctangle class with the new pararameters:
@@ -17,13 +19,15 @@ class Rectangle(Base):
         self.y = y
 
     def __str__(self) -> str:
-        '''Return a string with the rectangle info'''
+        '''Return a string with the object info
+        [Rectangle] (id) x/y - width/height'''
         return '[{}] ({}) {}/{} - {}/{}'.format(self.__class__.__name__,
                                                 self.id, self.x, self.y,
                                                 self.width, self.height)
 
     def update(self, *args, **kwargs):
-        '''Update the rectangle'''
+        '''Update the rectangle with *args or **kwargs.
+        to args the input must be (id, width, height, x, y)'''
         numargs = len(args)
         if numargs > 0:
             self.id = args[0]
@@ -40,11 +44,11 @@ class Rectangle(Base):
                 exec('self.{} = {}'.format(key, value))
 
     def area(self):
-        '''Return the rectangle's area'''
+        '''Return the rectangle's area (width * height)'''
         return self.__width * self.__height
 
     def display(self):
-        '''Print the rectangle with the coordenates'''
+        '''Print the rectangle with the coordenates and the character #'''
         for i in range(0, self.y):
             print('')
         for i in range(0, self.area()):
@@ -56,7 +60,7 @@ class Rectangle(Base):
                 print('')
 
     def num_check(self, value, name):
-        '''Check if the number is valid'''
+        '''Check if the number is valid and print TypeError and ValueError'''
         if type(value) is not int:
             raise TypeError('{} must be an integer'.format(name))
         if value <= 0 and name in ('width', 'height'):
@@ -71,7 +75,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        '''Return the width value'''
+        '''Return the width value of the rectangle'''
         return self.__width
 
     @width.setter
@@ -82,7 +86,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        '''Return property value'''
+        '''Return property value of the rectangle'''
         return self.__height
 
     @height.setter
@@ -93,7 +97,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        '''Return the x value'''
+        '''Return the x value of the rectangle'''
         return self.__x
 
     @x.setter
@@ -104,7 +108,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        '''Return the y value'''
+        '''Return the y value of the rectangle'''
         return self.__y
 
     @y.setter
