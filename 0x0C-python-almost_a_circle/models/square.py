@@ -7,7 +7,9 @@ class Square(Rectangle):
     '''Class Square'''
 
     def __init__(self, size, x=0, y=0, id=None):
-        '''Initialize'''
+        '''Initialize the class and inherits all the methods
+        from the parent class Rectangle, set the width and height
+        with te same value 'size'(required) and x, y still optional'''
         super().__init__(size, size, x, y, id)
 
     def __str__(self) -> str:
