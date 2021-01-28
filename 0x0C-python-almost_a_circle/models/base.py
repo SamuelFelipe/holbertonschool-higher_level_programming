@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 import json
 
-'''Defines Class Base'''
+'''Defines Class Base, the class will be the parent
+of the Rectangle and Square class'''
 
 
 class Base:
-    '''Parent class to avoid redundancy with common methods'''
+    '''Parent class to avoid redundancy with common methods
+    and determinate the id of each item'''
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -20,7 +22,8 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        '''return the JSON string representation of list_dictionaries'''
+        '''return the JSON string representation of list_dictionaries
+        if the imput is empty return a empty string'''
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return '[]'
         return json.dumps(list_dictionaries)
@@ -39,14 +42,16 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        '''Read a string and return a dictionare'''
+        '''Read a string and return a dictionare with all the
+        object data'''
         if json_string is None or len(json_string) == 0:
             return []
         return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
-        '''Returns an instance with all attributes already set'''
+        '''Returns an instance with all attributes already set
+        with the dictionary data'''
         from models.rectangle import Rectangle
         from models.square import Square
 
@@ -61,7 +66,8 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        '''Return a list with the instances in a file'''
+        '''Return a list with the instances in a file, if the file is
+        empty or do not exist the list will be empty'''
         fn = cls.__name__ + '.json'
         ls = []
         tmp = []
