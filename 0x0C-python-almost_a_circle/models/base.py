@@ -5,7 +5,7 @@ import json
 
 
 class Base:
-    '''Class Base'''
+    '''Parent class to avoid redundancy with common methods'''
     __nb_objects = 0
 
     def __init__(self, id=None):
