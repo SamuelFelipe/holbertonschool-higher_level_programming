@@ -27,12 +27,12 @@ class Square(Rectangle):
                 exec('self.{} = kwargs[i]'.format(i))
 
     @property
-    '''Return the square size'''
     def size(self):
+        '''Return the square size'''
         return self.width
 
     @size.setter
-    ''''Set the square size using the parent class verification'''
     def size(self, size):
+        '''Set the square size using the parent class verification'''
         self.width = size
         self.heigth = size
