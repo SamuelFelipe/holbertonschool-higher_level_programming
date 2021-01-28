@@ -4,7 +4,8 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    '''Class Square'''
+    '''Class Square, Rectangle child, do a square setting
+    width and height with the same value'''
 
     def __init__(self, size, x=0, y=0, id=None):
         '''Initialize the class and inherits all the methods
@@ -13,13 +14,15 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self) -> str:
-        '''Return a string with the square info'''
+        '''Return a string with the square info
+        [Square] (id) x/y - size'''
         return '[{}] ({}) {}/{} - {}'.format(self.__class__.__name__,
                                              self.id, self.x,
                                              self.y, self.width)
 
     def update(self, *args, **kwargs):
-        '''Update the square'''
+        '''Update the square with *args or **kwargs.
+        to args the input must be (id, size, x, y)'''
         argk = ('id', 'size', 'x', 'y')
         if args:
             for i in range(len(args)):
@@ -30,7 +33,7 @@ class Square(Rectangle):
 
     @property
     def size(self):
-        '''Return the square size'''
+        '''Return the size value of the square'''
         return self.width
 
     @size.setter
