@@ -55,7 +55,7 @@ class Base:
         from models.square import Square
 
         if cls is Rectangle:
-            dummy = Rectangle(1,1)
+            dummy = Rectangle(1, 1)
         elif cls is Square:
             dummy = Square(1)
         else:
