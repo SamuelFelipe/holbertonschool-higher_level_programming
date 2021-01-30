@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-import json
-
 '''Defines Class Base, the class will be the parent
 of the Rectangle and Square class'''
+import json
 
 
 class Base:
