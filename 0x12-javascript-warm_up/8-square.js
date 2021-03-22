@@ -7,7 +7,7 @@ if (!a) {
   let str = '';
 
   for (let i = 0; i < a; i++) {
-    str = str + '#';
+    str = str + 'X';
   }
   for (let i = 0; i < a; i++) {
     console.log(str);
