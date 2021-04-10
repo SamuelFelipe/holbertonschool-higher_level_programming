@@ -3,7 +3,7 @@
 '''find a peak in an array'''
 
 def find_peak(list_of_integers):
-
+    '''Return the first peak'''
     if not list_of_integers:
         return None
     elif len(list_of_integers) < 2:
