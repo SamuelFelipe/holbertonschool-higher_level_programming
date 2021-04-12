@@ -7,8 +7,8 @@ if __name__ == '__main__':
     import requests
     from sys import argv
 
-
-    req = requests.get('https://api.github.com/repos/rails/rails/commits', {'per_page': 10})
+    url = 'https://api.github.com/repos/{}/{}/commits'.format(argv[1], argv[2])
+    req = requests.get(url, {'per_page': 10})
 
     for i in req.json():
         print('{}: {}'.format(i['sha'], i['author']['login']))
