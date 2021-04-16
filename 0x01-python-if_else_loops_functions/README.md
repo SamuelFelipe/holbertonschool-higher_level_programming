@@ -1,8 +1,10 @@
 ### Python conditionals and easy loops
 
-0-positive_or_negative.py: determinate if a random number is positive, negative or zero
+My firsts lines of code in python.
 
-1-last_digit.py: print the lastdigit of a random number
+[positive or negative:](/0-positive_or_negative.py) Determinate if a random number is positive, negative or zero.
+
+[last digit:](./1-last_digit.py) Print the last digit of a random number.
 
 2-print_alphabet.py: print the alphabet
 
