@@ -1,21 +1,39 @@
-### phyton, shell and c scripts
+# python, shell and C scripts
 
-0-run: shell script who runs the file in the $PYFILE global variable
 
-1-run_inline: execute the code in the $PYCODE global variable
+My firsts lines of code in python.
 
-2-print.py: print a beautiful message
+```
 
-3-print_number.py: print a integer
+print("Good Morning Starshine, the Earth Says Hello!")
 
-4-print_float.py: print a float with 2 numbers after the point
+```
 
-5-print_string.py: print 3 times the 'str' variable followed by the first 9 chars of 'str'
+### Python
 
-6-concat.py: concatenate two strings
+* [Run:](./0-run) Shell script who runs the file in the $PIFFLE global variable.
 
-7-edges.py: create some new variables from a string
+* [Run in-line:](./1-run_inline) Execute the code in the $PRECODE global variable.
 
-8-concat_edges.py: create a new string with some pices of another one
+* [Print:](./2-print.py) Print a beautiful message.
 
-9-easter_egg.py: a python easter egg
+* [Print number:](./3-print_number.py) Print an integer.
+
+* [Print float:](./4-print_float.py) Print a float with 2 numbers after the point.
+
+* [Print string:](./5-print_string.py) Print 3 times the `str` variable followed by the first 9 chars of `ctr`.
+
+* [Concatenate:](./6-concat.py) Concatenate two strings.
+
+* [Edges:](./7-edges.py) Create some new variables from a string.
+
+* [Concatenate edges:](./8-concat_edges.py) Create a new string with some pieces of another one.
+
+* [Easter egg:](./9-easter_egg.py) A python easter egg.
+
+* [Magic:](./102-magic_calculation.py) Magic.
+
+
+### C
+
+* [Check cycle:](./10-check_cycle.c) Check if the linked list has a bucle.
