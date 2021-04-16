@@ -2,15 +2,15 @@
 
 
 
-* [Positive or negative:](./0-positive or negative.py) Determinate if a random number is positive, negative or zero.
+* [Positive or negative:](./0-positive_or_negative.py) Determinate if a random number is positive, negative or zero.
 
-* [Last digit:](./1-last digit.py) Print the last digit of a random number.
+* [Last digit:](./1-last_digit.py) Print the last digit of a random number.
 
-* [Print alphabet:](./2-Print alphabet.py) Print the alphabet.
+* [Print alphabet:](./2-Print_alphabet.py) Print the alphabet.
 
-* [Print alphabt:](./3-Print alphabt.py) Print the alphabet without 'q' and 'a'.
+* [Print alphabt:](./3-Print_alphabt.py) Print the alphabet without 'q' and 'a'.
 
-* [Print hexa:](./4-Print hexa.py) Print the numbers from 0 to 98 with their hexadecimal value.
+* [Print hexa:](./4-Print_hexa.py) Print the numbers from 0 to 98 with their hexadecimal value.
 
 * [Print comb:](./5-Print_comb2.py) Print the numbers from 0 to 99.
 
