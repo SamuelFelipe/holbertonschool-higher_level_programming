@@ -1,23 +1,33 @@
 ### Python conditionals and easy loops
 
-My firsts lines of code in python.
 
-[positive or negative:](/0-positive_or_negative.py) Determinate if a random number is positive, negative or zero.
 
-[last digit:](./1-last_digit.py) Print the last digit of a random number.
+* [Positive or negative:](./0-positive or negative.py) Determinate if a random number is positive, negative or zero.
 
-2-print_alphabet.py: print the alphabet
+* [Last digit:](./1-last digit.py) Print the last digit of a random number.
 
-3-print_alphabt.py: print the alphabet without 'q' and 'e'
+* [Print alphabet:](./2-Print alphabet.py) Print the alphabet.
 
-4-print_hexa.py: print the numbers from 0 to 98 with their hexadecimal value
+* [Print alphabt:](./3-Print alphabt.py) Print the alphabet without 'q' and 'a'.
 
-5-print_comb2.py: print the numbers from 0 to 99
+* [Print hexa:](./4-Print hexa.py) Print the numbers from 0 to 98 with their hexadecimal value.
 
-6-print_comb3.py: print all possible different combinations of two digits
+* [Print comb:](./5-Print_comb2.py) Print the numbers from 0 to 99.
 
-7-islower.py: detect if a character is upper or lowercase
+* [Print comb:](./6-Print_comb3.py) Print all possible different combinations of two digits.
 
-8-uppercase.py: print a string in uppercase
+* [Is lower:](./7-islower.py) Detect if a character is upper or lowercase.
 
-9-print_last_digit.py: print the last digit of a number and return it
+* [Uppercase:](./8-uppercase.py) Print a string in uppercase.
+
+* [Print last digit.by:](./9-print_last_digit.py) Print the last digit of a number and return it.
+
+* [Add:](./10-add.py) Add two numbers.
+
+* [Pow:](./11-pow.py) Pow.
+
+* [Fizz buzz:](./12-fizzbuzz.py) Fizz Buzz exercise.
+
+* [Reversed alphabet:](./100-print_tebahpla.py) Print a reversed alphabet.
+
+* [Magic:](./102-magic_calculation.py) Do some maths.
