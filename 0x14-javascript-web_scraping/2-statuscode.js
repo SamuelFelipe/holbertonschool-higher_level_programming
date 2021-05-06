@@ -3,10 +3,11 @@
 const argv = process.argv.slice(2);
 const url = argv[0];
 
-const https = require('https');
+const req = require('request');
 
-const req = https.request(url, 'GET', res => {
-  console.log(`code: ${res.statusCode}`);
+req.get(url, function (error, response, body) {
+  if (error) {
+    return console.log(error);
+  }
+  console.log('code: ' + response.statusCode);
 });
-
-req.end();
