@@ -6,6 +6,9 @@ const url = argv[0];
 const request = require('request');
 
 request(url, function (error, response, body) {
+  if (error) {
+    return console.log(error);
+  }
   const info = JSON.parse(body);
   let count = 0;
   for (let i = 0; i < info.count; i++) {

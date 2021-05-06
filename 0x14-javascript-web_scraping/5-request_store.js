@@ -9,6 +9,9 @@ const request = require('request');
 let data;
 
 request(url, function (error, response, body) {
+  if (error) {
+    return console.log(error);
+  }
   data = body;
   fs.writeFile(filename, data, 'utf-8', function (err) {
     if (err) {
