@@ -4,8 +4,11 @@
 
 
 if __name__ == '__main__':
+    from sys import argv
     import requests
 
-    req = requests.get('https://intranet.hbtn.io/status')
+    url = argv[1]
 
-    print(req.headers['x-request-id'])
+    req = requests.get(url)
+
+    print(req.headers['X-request-Id'])
