@@ -12,7 +12,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    '''State class'''
+    '''State class with sqlalchemy'''
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
