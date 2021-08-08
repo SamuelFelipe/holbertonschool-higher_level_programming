@@ -24,6 +24,7 @@ take 3 arguments: <<mysql username>>, <<mysql password>> and <<database name>>
     Session = sessionmaker(engine)
     session = Session()
 
-    session.query(State).filter(State.id == 2).remove()
+    session.query(State).filter(State.name.like('%a%')).filter(
+                                State.name.like('%A%')).remove()
 
     session.commit()
