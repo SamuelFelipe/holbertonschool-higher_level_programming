@@ -27,7 +27,7 @@ take 3 arguments: <<mysql username>>, <<mysql password>> and <<database name>>
 
     new_state = State(name='California')
 
-    new_city = City(name='San Francisco', state=new_state.id)
+    new_city = City(name='San Francisco', state_id=new_state.id)
 
     session.add(new_city)
     session.add(new_state)
