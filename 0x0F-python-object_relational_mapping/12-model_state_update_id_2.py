@@ -12,7 +12,7 @@ from sqlalchemy.orm import sessionmaker
 
 
 if __name__ == "__main__":
-'''
+    '''
 take 3 arguments: <<mysql username>>, <<mysql password>> and <<database name>>
 '''
 
